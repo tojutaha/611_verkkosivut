@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --tausta: #eeeeee;
+    --teksti: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti);
+}
+
+main {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+section {
+    max-width: 900px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+nav {
+    display: block;
+    position: absolute;
+    top: 20;
+    left: 20;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#navigointi {
+    /*width: 150px;*/
+    width: 250px;
+}
+
+#footeri {
+    max-width: 900px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid;
+}
+
+td {
+    border: 1px solid;
+}
+
+tr {
+    border: 1px solid;
+}
+
+#arvosana {
+    width: 150px;
+    text-align: center;
+}
