@@ -51,7 +51,7 @@ a {
     font-size: 1.3em;
   }
 
-#footeri {
+footer {
     max-width: 900px;
     width: 80%;
     margin: 20px auto;
@@ -106,12 +106,16 @@ tr.spacer {
 }
 
 ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
     list-style-type: square;
     list-style-position: outside;
 }
 
-li {
-    list-style-type: square;
+#sisempilista {
+    padding-left: -10px;
+    list-style-type: disc;
     list-style-position: outside;
 }
 
