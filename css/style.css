@@ -65,7 +65,12 @@ tr {
     border: 1px solid;
 }
 
+tr.spacer {
+    height: 20px;
+}
+
 #arvosana {
     width: 150px;
     text-align: center;
+    vertical-align: top;
 }
