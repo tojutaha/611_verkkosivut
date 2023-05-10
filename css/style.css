@@ -21,6 +21,8 @@
     --teksti: #333333;
     --linkki: #444296;
     --reunus: #3f3f3f;
+    --lime: #87af1a;
+    --sininen: #3d85e0;
     --max-leveys: 1200px;
     --leveys: 80%;
 }
@@ -63,9 +65,21 @@ a {
     text-decoration: none;
 }
 
-#navigointi a {
-    font-size: 1.3em;
-  }
+nav a {
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--teksti);
+    color: whitesmoke;
+    background-color: var(--teksti);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color:  var(--sininen);
+}
 
 footer {
     max-width: var(--max-leveys);
