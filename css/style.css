@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+@media only screen and (max-width: 800px) {
+    
+    header,
+    header > nav,
+    header > nav > a {
+        display: block;
+        float: none;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        clear: both;
+    }
+}
+
 :root {
     --tausta: #eeeeee;
     --tummempitausta: #e0e0e0;
@@ -40,7 +54,7 @@ nav {
     overflow: hidden;
     position: fixed;
     width: 250px;
-    left: 20;
+    left: 20px;
     margin-left: 20px;
 }
 
@@ -95,7 +109,6 @@ tr.spacer {
 .arvosana {
     width: 150px;
     text-align: center;
-    /*vertical-align: top;*/
     background-color: var(--tummempitausta);
 }
 
