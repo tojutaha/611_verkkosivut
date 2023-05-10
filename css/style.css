@@ -3,14 +3,35 @@
 @media only screen and (max-width: 800px) {
     
     header,
-    header > nav,
-    header > nav > a {
+    header nav,
+    header nav a {
         display: block;
         float: none;
         height: auto;
         width: 100%;
         text-align: center;
         clear: both;
+    }
+
+    header nav {
+        position: static;
+        margin: 0;
+    }
+
+    header nav a {
+        padding: 10px 0;
+        border-radius: 0;
+        margin-bottom: 0px;
+    }
+
+    main section {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        align-content: center;
     }
 }
 
@@ -19,7 +40,6 @@
     --tummempitausta: #e0e0e0;
     --tummintausta: #cecece;
     --teksti: #333333;
-    --linkki: #444296;
     --reunus: #3f3f3f;
     --lime: #87af1a;
     --sininen: #3d85e0;
@@ -51,18 +71,18 @@ section {
     margin: 20px auto;
 }
 
+a {
+    color: var(--sininen);
+    text-decoration: none;
+}
+
 nav {
     display: block;
     overflow: hidden;
     position: fixed;
     width: 250px;
     left: 20px;
-    margin-left: 20px;
-}
-
-a {
-    color: var(--linkki);
-    text-decoration: none;
+    margin-left: 20px;;
 }
 
 nav a {
@@ -75,6 +95,7 @@ nav a {
     background-color: var(--teksti);
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 nav a:hover {
@@ -90,13 +111,13 @@ footer {
 
 table {
     border-color: var(--reunus);
-    border: solid;
     border-collapse: collapse;
 }
 
 th {
     border: 0;
-    background: var(--tummintausta);
+    background-color: var(--teksti);
+    color: whitesmoke;
     position: sticky;
     top: 0;
 }
@@ -115,11 +136,6 @@ tr:nth-child(odd) {
     background-color: var(--tummempitausta);
 }
 
-tr.spacer {
-    border: 0;
-    height: 20px;
-}
-
 .arvosana {
     width: 150px;
     text-align: center;
@@ -130,12 +146,17 @@ tr.spacer {
     padding-left: 10px;
 }
 
-.spacer {
-    background-color: var(--tausta);
-}
-
 .kriteeri::first-letter {
     text-transform: capitalize;
+}
+
+tr.spacer {
+    border: 0;
+    height: 20px;
+}
+
+.spacer {
+    background-color: var(--tausta);
 }
 
 ul {
@@ -146,12 +167,12 @@ ul {
     list-style-position: outside;
 }
 
+li::first-letter {
+    text-transform: capitalize;
+}
+
 .sisempilista {
     padding-left: -10px;
     list-style-type: disc;
     list-style-position: outside;
-}
-
-li::first-letter {
-    text-transform: capitalize;
 }
