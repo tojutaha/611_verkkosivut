@@ -90,18 +90,22 @@ tr.spacer {
     height: 20px;
 }
 
-#arvosana {
+.arvosana {
     width: 150px;
     text-align: center;
     /*vertical-align: top;*/
     background-color: var(--tummempitausta);
 }
 
-#kriteeri {
+.kriteeri {
     padding-left: 10px;
 }
 
-#kriteeri::first-letter {
+.spacer {
+    background-color: var(--tausta);
+}
+
+.kriteeri::first-letter {
     text-transform: capitalize;
 }
 
@@ -113,7 +117,7 @@ ul {
     list-style-position: outside;
 }
 
-#sisempilista {
+.sisempilista {
     padding-left: -10px;
     list-style-type: disc;
     list-style-position: outside;
