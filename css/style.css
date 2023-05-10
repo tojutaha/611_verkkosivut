@@ -7,6 +7,8 @@
     --teksti: #333333;
     --linkki: #444296;
     --reunus: #3f3f3f;
+    --max-leveys: 1200px;
+    --leveys: 80%;
 }
 
 * {
@@ -28,8 +30,8 @@ main {
 
 section {
     padding-left: 250px;
-    max-width: 1200px;
-    width: 80%;
+    max-width: var(--max-leveys);
+    width: var(--leveys);
     margin: 20px auto;
 }
 
@@ -52,8 +54,8 @@ a {
   }
 
 footer {
-    max-width: 900px;
-    width: 80%;
+    max-width: var(--max-leveys);
+    width: var(--leveys);
     margin: 20px auto;
     text-align: right;
 }
