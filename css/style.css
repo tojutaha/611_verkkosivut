@@ -219,7 +219,7 @@ li::first-letter {
 }
 
 .sisempilista {
-    padding-left: -10px;
+    padding-left: 10px;
     list-style-type: disc;
     list-style-position: outside;
 }
