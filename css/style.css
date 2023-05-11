@@ -218,8 +218,17 @@ li::first-letter {
     text-transform: capitalize;
 }
 
+.ammattitaitovaatimukset li > ul {
+    border-left: var(--sininen) solid 3px;
+}
+
+.listaborderi {
+    padding-left: 30px;
+    border-left: var(--sininen) solid 3px;
+}
+
 .sisempilista {
-    padding-left: 10px;
+    padding-left: 30px;
     list-style-type: disc;
     list-style-position: outside;
 }
